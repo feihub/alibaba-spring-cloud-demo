@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/feihub/springcloud.git
+          basedir: gitconfig
+          skipSslValidation: true
+          username: xiaofeiwang2016@163.com
+          password: xiaofei056236
+          default-label: master
+          search-paths: config
