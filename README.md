@@ -1,1 +1,1 @@
-# This is one SpringCloud Demo.
+# This is one SpringCloud demo.
