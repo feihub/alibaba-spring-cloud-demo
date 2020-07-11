@@ -8,13 +8,42 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/feihub/springcloud.git
+          uri: git@github.com:feihub/springcloud.git
           basedir: gitconfig
           skipSslValidation: true
-          username: xiaofeiwang2016@163.com
-          password: xiaofei056236
           default-label: master
           search-paths: configdata
+          ignoreLocalSshSettings: true
+          hostKey: ssh
+          hostKeyAlgorithm: ssh-rsa
+          privateKey: |
+              -----BEGIN RSA PRIVATE KEY-----
+              MIIEowIBAAKCAQEA7U1QUCvpwtdWN4mgKuvmsR3VwgsvPYco/zt/v32b767P2Nnu
+              ibKTIHxiOhbzc9LWGAHWvF3ur/zQDw8OjUqhBk59L2/kvsrUskOZ2U2MjpqppBSR
+              JBI+XRoSIiv+Wx5HJcIeLQruL5O+hQeKPGiMx+Pz5kVX4gSPp7EFuwuqMfTOIcVh
+              /aXNK6xMuXkZRf8zch0F6xj7ffKaUaqrS6G+fCebBGSeuxhuhBGNxKpKjyvlXmWy
+              LiQG3n0HkGzNVNcF6Y0aVusmF/FUrBd3GaHnkjGXDQ7jyh3W3NM4DY4oxhvcQLnJ
+              OupcDDHwEbzyQeC9+NgdV+mDgyXD539jGx+sFwIDAQABAoIBACg4hnhQORrRLMfV
+              B9S+jydOC0EMbEFde1FnYEuwmpGRa6ExrwCfx9glvPBjm3fyMF95UFA1C5PAofMr
+              dif0kj5jZ0x3Bqpf7pUYaCcwwbYZ+M7avY8DmJZnKNOp6T7AbwazVDIGPEDMJeqe
+              UIvUnKf0tw48ipzAcSjXFEWTwJEevZJRwZJri8SGjxgx/6O5MtJy4YpZSUJEoz8m
+              tWkwB4eWjCOpIb0/qJF6tkVwpKsSnahrJLRi9UoDT2hG0JnHd/MACZ6y3GX3wKeT
+              mbennC73CZ5k6k++Iki0aGOYS/Yh2mb0K80NsrEFMDkj9odWl9KQtf68pXXNeYDx
+              sRCnNGECgYEA+biJNIRguvtHZimsnscFQKy+0a7b7u0QFxsP7a8gYbb3oaU8QgYR
+              kA6pQm3e4vTTIXh5qIw5H7tcj0/w5xR4SzZfd7EdEpF7J2WmM75VlriTuWTHdcA7
+              DRP3XKTNpmReod4iXyiq3ImLdDK+EdfNqb7sFjQemAV4Y+hlEnhvsnMCgYEA80TW
+              UJeqVTTbjXJdxGOriB6/vKRX4lrpk3FfupJU6Yv7/NLp64pQBcu1vHKRR2/F/RNZ
+              5bDcBbh0O+E0b2kFuutpcxviSSiFU7trnCYTiHiQHeC7A7uzugwvQpCnE4S6W6VG
+              UcxWLoIxMeJm9kdLbIN5VfiuVnZTsbWmNOz7os0CgYBZqIHKk0TPnWxzJ79MepRO
+              NjeEvU1FqWO/h/3eDqSHsNOT++l4owknObxXl28Q+WnceI7ljwLre6+t3LvXm6fd
+              CTaZmMOhaQ5YhMx5g3rjVH3lcGOUyWHqPiLv5lPXy+2WHFUm6Uj/SXsCSz2m1l6G
+              9X96MVhSqJQi+stfKFKiNQKBgQCvEsJeO9hU+/ZqBH2hAc4H54E7xNaOy7i/6N7p
+              CbjcX2cZW70HS4ItuZ5wIc+WJsXJTWzsFe0ynL3h/kBbUazTCerY8Z9X4TaavQ5D
+              0U9LbuDg78QHesVsxqoYcLwdGu93VymVYsY/MGkxKmvJICQS00e2bIMjLIMtKLqV
+              6ltqnQKBgBSU+eJ23gwWWFAy7Bh7nhNMBD4X2lmJLsHd+wO/jrbOmfvRGmXB0C6x
+              fiTsbebvY84FPWaZEM/vCzyTHBOAF5iU63BS9K+w00rqBIiVna3cU9dOqQpq0/d8
+              TZPSRVlLBLQ8qv6wIhyaz04h3QH4TblTuVls45GrwuEDjRbVz93a
+              -----END RSA PRIVATE KEY-----
 
 eureka:
   client:
