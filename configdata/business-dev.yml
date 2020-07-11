@@ -1,1 +1,15 @@
+server:
+  port: 8088
 
+spring:
+  application:
+    name: business
+
+  cloud:
+    config:
+      uri: http://localhost:8082
+      profile: dev
+
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
