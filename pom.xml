@@ -23,8 +23,12 @@
   </properties>
 
   <modules>
-    <module>configservice</module>
-    <module>eurekaservice</module>
+    <module>config</module>
+    <module>eureka</module>
+    <module>gateway</module>
+    <module>business</module>
+    <module>log</module>
+    <module>hystrix</module>
   </modules>
 
   <dependencyManagement>

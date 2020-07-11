@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: gateway
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka/
+
+  cloud:
+    config:
+      uri: http://localhost:8082
+      profile: dev
