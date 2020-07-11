@@ -1,6 +1,0 @@
-server:
-  port: 8086
-
-logging:
-  level:
-    org.springframework.cloud: 'DEBUG'

@@ -1,6 +1,0 @@
-server:
-  port: 8010
-
-logging:
-  level:
-    org.springframework.cloud: 'DEBUG'

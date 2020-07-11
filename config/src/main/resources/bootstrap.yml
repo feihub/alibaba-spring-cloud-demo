@@ -1,8 +1,26 @@
+server:
+  port: 8082
+
 spring:
   application:
     name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/feihub/springcloud.git
+          basedir: gitconfig
+          skipSslValidation: true
+          username: xiaofeiwang2016@163.com
+          password: xiaofei056236
+          default-label: master
+          search-paths: configdata
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8084/eureka/
+
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
