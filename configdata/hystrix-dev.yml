@@ -14,3 +14,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8084/eureka/
+
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
