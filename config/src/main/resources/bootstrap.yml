@@ -8,11 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:feihub/springcloud.git
+          uri: git@github.com:feihub/SpringCloudConfigData.git
           basedir: gitconfig
           skipSslValidation: true
           default-label: master
-          search-paths: configdata
           ignoreLocalSshSettings: true
           hostKey: ssh
           hostKeyAlgorithm: ssh-rsa
