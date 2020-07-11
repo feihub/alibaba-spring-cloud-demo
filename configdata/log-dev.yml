@@ -1,1 +1,17 @@
 
+server:
+  port: 8010
+
+spring:
+  application:
+    name: log
+  cloud:
+    config:
+      uri: http://localhost:8082
+      profile: dev
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka/
