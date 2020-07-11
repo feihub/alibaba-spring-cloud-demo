@@ -2,15 +2,6 @@
 server:
   port: 8012
 
-spring:
-  application:
-    name: log
-  cloud:
-    config:
-      uri: http://localhost:8082
-      profile: dev
-
-
 eureka:
   client:
     serviceUrl:
