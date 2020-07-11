@@ -1,7 +1,7 @@
 spring:
-application:
-  name: log
-cloud:
-  config:
-    uri: http://localhost:8082
-    profile: dev
+  application:
+    name: log
+  cloud:
+    config:
+      uri: http://localhost:8082
+      profile: dev
