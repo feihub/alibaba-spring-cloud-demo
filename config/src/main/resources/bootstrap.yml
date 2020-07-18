@@ -48,6 +48,12 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8084/eureka/
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
 logging:
   level:
     org.springframework.cloud: 'DEBUG'
