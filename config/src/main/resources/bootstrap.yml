@@ -42,7 +42,11 @@ spring:
                         fiTsbebvY84FPWaZEM/vCzyTHBOAF5iU63BS9K+w00rqBIiVna3cU9dOqQpq0/d8
                         TZPSRVlLBLQ8qv6wIhyaz04h3QH4TblTuVls45GrwuEDjRbVz93a
                         -----END RSA PRIVATE KEY-----
-
+  zipkin:
+    baseUrl: http://log/
+  sleuth:
+    sampler:
+      probability: 1.0
 eureka:
   client:
     serviceUrl:

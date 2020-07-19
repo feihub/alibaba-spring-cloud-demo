@@ -7,18 +7,20 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import zipkin2.server.internal.EnableZipkinServer;
 
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCircuitBreaker
 @RestController
+@EnableZipkinServer
 public class LogApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(LogApplication.class, args);
     }
 
-    @RequestMapping("/")
+    @RequestMapping("/test")
     @HystrixCommand(fallbackMethod="logFallback")
     public String home() {
 
