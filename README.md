@@ -11,7 +11,13 @@
 ## config:      8082
 
 ## eureka:      8084
+### http://localhost:8084/
 
 ## hystrix:     8010
 
+### http://localhost:8010/hystrix
+### http://localhost:8010/turbine.stream
+
 ## log:         8012
+
+### http://localhost:8012/zipkin/
