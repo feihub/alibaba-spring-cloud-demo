@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableFeignClients
 public class BusinessApplication {
 
+    @Autowired
+    private Business2Client business2Client;
+    
     public static void main(String[] args) {
         SpringApplication.run(BusinessApplication.class, args);
     }
@@ -30,6 +33,11 @@ public class BusinessApplication {
 
     public String businessFallback() {
         return "businessFallback";
+    }
+    
+    @RequestMapping("/openfeign/test")
+    public String home() {
+        return business2Client.getTest();
     }
 
 }
