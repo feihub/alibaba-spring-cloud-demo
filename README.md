@@ -1,7 +1,7 @@
 # This is one Spring Cloud Demo.
 ## spring-cloud:Greenwich.SR6
 ## spring-boot:2.1.9.RELEASE
-## Spring Cloud Config/Spring Cloud Gateway/Spring Cloud OpenFeign/Spring Cloud Netflix(eureka/hystrix) + turbine//Spring Cloud Sleuth + Zipkin
+## Spring Cloud Config/Spring Cloud Gateway/Spring Cloud OpenFeign/Spring Cloud Netflix(eureka/ribbon/hystrix) + turbine//Spring Cloud Sleuth + Zipkin
 
 ## gateway:     8086
 ### http://localhost:8086
