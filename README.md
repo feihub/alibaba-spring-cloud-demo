@@ -1,4 +1,6 @@
 # This is one Spring Cloud Demo.
+##spring-cloud:Greenwich.SR6
+##spring-boot:2.1.9.RELEASE
 
 ## gateway:     8086
 ### http://localhost:8086
