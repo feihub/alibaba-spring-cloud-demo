@@ -1,4 +1,4 @@
-# This is one Spring Cloud demo.
+# This is one Spring Cloud Demo.
 
 ## gateway:     8086
 ### http://localhost:8086
@@ -12,10 +12,6 @@
 
 ## business2:   8014
 ### http://localhost:8014
-
-
-
-
 
 ## config:      8082
 ### http://localhost:8082
@@ -31,8 +27,3 @@
 ## log:         8012
 ### http://localhost:8012
 ### http://localhost:8012/zipkin/
-
-
-
-
-
