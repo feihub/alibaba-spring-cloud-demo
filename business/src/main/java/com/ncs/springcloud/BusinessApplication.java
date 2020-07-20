@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableEurekaClient
 @EnableCircuitBreaker
 @RestController
+@EnableFeignClients
 public class BusinessApplication {
 
     public static void main(String[] args) {
