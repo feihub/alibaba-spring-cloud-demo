@@ -1,4 +1,4 @@
-# This is one Spring Cloud Demo.
+# Spring Cloud Demo
 ## spring-cloud:Greenwich.SR6
 ## spring-boot:2.1.9.RELEASE
 ## Spring Cloud Config/Spring Cloud Gateway/Spring Cloud OpenFeign/Spring Cloud Netflix(Eureka/Ribbon/Hystrix) + Turbine/Spring Cloud Sleuth + Zipkin
