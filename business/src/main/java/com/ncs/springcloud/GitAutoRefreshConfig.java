@@ -1,5 +1,9 @@
+package com.ncs.springcloud;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
 @Component
-@Data
 @ConfigurationProperties(prefix = "data")
 public class GitAutoRefreshConfig {
 
@@ -36,4 +40,21 @@ public class GitAutoRefreshConfig {
     private String env;
 
     private UserInfo user;
+
+    public String getEnv() {
+        return env;
+    }
+
+    public void setEnv(String env) {
+        this.env = env;
+    }
+
+    public UserInfo getUser() {
+        return user;
+    }
+
+    public void setUser(UserInfo user) {
+        this.user = user;
+    }
+
 }
