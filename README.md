@@ -8,6 +8,7 @@
 ### http://localhost:8086/business/
 ### http://localhost:8086/business2/
 ### http://localhost:8086/business/openfeign/test
+### http://localhost:8086/test/rateLimiter
 
 ## business:    8088
 ### http://localhost:8088
