@@ -36,4 +36,16 @@ public class GatewayApplication {
         return new HostAddrKeyResolver();
     }
     
+    RateLimiter rateLimiter = RateLimiter.create(5);
+    
+    @RequestMapping("/test/rateLimiter")
+    @HystrixCommand(fallbackMethod="gatewayFallback")
+    public String testRateLimiter() {
+
+        if(rateLimiter.tryAcquire()){
+            return "testRateLimiterOk";
+        }else{
+            return gatewayFallback();
+        }
+    }
 }
