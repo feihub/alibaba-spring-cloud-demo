@@ -11,7 +11,6 @@ spring:
           uri: git@github.com:feihub/configdata.git
           basedir: gitconfig
           default-label: master
-          clone-on-start: true
           ignoreLocalSshSettings: true
 #          hostKey: ssh
 #          hostKeyAlgorithm: ssh-rsa
@@ -50,7 +49,7 @@ spring:
       probability: 1.0
   rabbitmq:
     host: localhost
-    port: 15672
+    port: 5672
     username: guest
     password: guest
 
