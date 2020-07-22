@@ -14,6 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GatewayApplication {
 
+    RateLimiter rateLimiter = RateLimiter.create(5);
+    
+    @Bean
+    public HostAddrKeyResolver hostAddrKeyResolver() {
+        return new HostAddrKeyResolver();
+    }
+    
     public static void main(String[] args) {
         SpringApplication.run(GatewayApplication.class, args);
     }
@@ -31,17 +38,9 @@ public class GatewayApplication {
         return "gatewayFallback";
     }
 
-     @Bean
-    public HostAddrKeyResolver hostAddrKeyResolver() {
-        return new HostAddrKeyResolver();
-    }
-    
-    RateLimiter rateLimiter = RateLimiter.create(5);
-    
     @RequestMapping("/test/rateLimiter")
     @HystrixCommand(fallbackMethod="gatewayFallback")
     public String testRateLimiter() {
-
         if(rateLimiter.tryAcquire()){
             return "testRateLimiterOk";
         }else{
