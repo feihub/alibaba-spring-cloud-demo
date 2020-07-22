@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableCircuitBreaker
 @RestController
 @EnableFeignClients
+@RefreshScope
 public class BusinessApplication {
 
     @Autowired
