@@ -20,6 +20,9 @@ public class BusinessApplication {
     @Autowired
     private Business2Client business2Client;
     
+    @Autowired
+    private GitAutoRefreshConfig gitAutoRefreshConfig;
+    
     public static void main(String[] args) {
         SpringApplication.run(BusinessApplication.class, args);
     }
@@ -42,4 +45,8 @@ public class BusinessApplication {
         return business2Client.getTest();
     }
 
+    @GetMapping(value = "/autoShow")
+    public Object autoShow(){
+        return gitAutoRefreshConfig;
+    }
 }
