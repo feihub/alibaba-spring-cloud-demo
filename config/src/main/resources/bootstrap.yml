@@ -11,6 +11,7 @@ spring:
           uri: git@github.com:feihub/configdata.git
           basedir: gitconfig
           default-label: master
+          clone-on-start: true
           ignoreLocalSshSettings: true
 #          hostKey: ssh
 #          hostKeyAlgorithm: ssh-rsa
@@ -47,6 +48,12 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 eureka:
   client:
     serviceUrl:
@@ -56,7 +63,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream
+        include: hystrix.stream,bus-refresh
 
 logging:
   level:
