@@ -31,4 +31,9 @@ public class GatewayApplication {
         return "gatewayFallback";
     }
 
+     @Bean
+    public HostAddrKeyResolver hostAddrKeyResolver() {
+        return new HostAddrKeyResolver();
+    }
+    
 }
