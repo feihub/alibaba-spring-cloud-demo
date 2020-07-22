@@ -8,19 +8,20 @@
 ### http://localhost:8086/business/
 ### http://localhost:8086/business2/
 ### http://localhost:8086/business/openfeign/test
+### http://localhost:8086/test/rateLimiter
 
 ## business:    8088
 ### http://localhost:8088
 ### http://localhost:8088/openfeign/test
 ### http://localhost:8088/autoShow
-### http://localhost:8082/actuator/refresh
+### GET:http://localhost:8082/actuator/refresh
 
 ## business2:   8014
 ### http://localhost:8014
 
 ## config:      8082
 ### http://localhost:8082
-### http://localhost:8082/actuator/bus-refresh
+### POST:http://localhost:8082/actuator/bus-refresh
 
 ## eureka:      8084
 ### http://localhost:8084
