@@ -8,7 +8,7 @@
     <groupId>com.ncs.springcloud</groupId>
     <artifactId>ncs-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
-  </parent>pom.xml
+  </parent>
 
   <groupId>com.ncs.springcloud</groupId>
   <artifactId>turbine</artifactId>

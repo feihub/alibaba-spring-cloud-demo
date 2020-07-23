@@ -25,6 +25,7 @@
   <modules>
     <module>config</module>
     <module>eureka</module>
+    <module>oauth2</module>
     <module>gateway</module>
     <module>business</module>
     <module>business2</module>
