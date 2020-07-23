@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableFeignClients
 @RefreshScope
+@EnableOAuth2Sso
 public class BusinessApplication {
 
     @Autowired
