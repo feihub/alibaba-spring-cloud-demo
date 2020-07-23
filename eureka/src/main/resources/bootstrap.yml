@@ -1,3 +1,6 @@
+server:
+  port: 8084
+
 spring:
   application:
     name: eureka
@@ -18,3 +21,12 @@ management:
     web:
       exposure:
         include: hystrix.stream,refresh
+
+eureka:
+      client:
+        registerWithEureka: false
+        fetchRegistry: false
+
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
