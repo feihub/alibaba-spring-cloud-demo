@@ -34,4 +34,4 @@
 ### http://localhost:8010/turbine.stream
 
 ## zipkin:         8012
-### http://localhost:8012/zipkin/
+### http://localhost:8012
