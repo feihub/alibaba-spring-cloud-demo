@@ -13,9 +13,9 @@ import org.springframework.context.annotation.Bean;
 @EnableEurekaClient
 @EnableHystrixDashboard
 @EnableTurbine
-public class HystrixApplication {
+public class TurbineApplication {
     public static void main(String[] args) {
-        SpringApplication.run(HystrixApplication.class, args);
+        SpringApplication.run(TurbineApplication.class, args);
     }
     @Bean
     public ServletRegistrationBean getServlet(){
