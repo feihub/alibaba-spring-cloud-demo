@@ -5,22 +5,11 @@ spring:
   application:
     name: eureka
 
-  cloud:
-    config:
-      uri: http://localhost:8082
-      profile: dev
-
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-
 management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream,refresh
+        include: hystrix.stream
 
 eureka:
       client:
@@ -29,4 +18,4 @@ eureka:
 
 logging:
   level:
-    org.springframework.cloud: 'DEBUG'
+    org.springframework.cloud: DEBUG
