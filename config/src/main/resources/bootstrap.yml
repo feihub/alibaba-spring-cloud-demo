@@ -41,7 +41,7 @@ spring:
                         TZPSRVlLBLQ8qv6wIhyaz04h3QH4TblTuVls45GrwuEDjRbVz93a
                         -----END RSA PRIVATE KEY-----
   zipkin:
-    baseUrl: http://log/
+    baseUrl: http://zipkin/
   sleuth:
     sampler:
       probability: 1.0
