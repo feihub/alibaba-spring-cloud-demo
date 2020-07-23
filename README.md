@@ -23,6 +23,7 @@
 ### GET:http://localhost:8014/actuator/refresh
 
 ## config:      8082
+### http://localhost:8082/gateway-dev.yml
 ### POST:http://localhost:8082/actuator/bus-refresh
 
 ## eureka:      8084
