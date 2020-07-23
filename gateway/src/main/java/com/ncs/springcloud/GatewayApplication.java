@@ -13,24 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCircuitBreaker
-@RestController
 public class GatewayApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(GatewayApplication.class, args);
     }
-
-    @RequestMapping("/")
-    @HystrixCommand(fallbackMethod="gatewayFallback")
-    public String home() {
-
-        int i = 1/0;
-
-        return "gateway";
-    }
-
-    public String gatewayFallback() {
-        return "gatewayFallback";
-    }
-
 }
