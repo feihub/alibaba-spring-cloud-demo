@@ -4,5 +4,7 @@ spring:
 
   cloud:
     config:
-      uri: http://localhost:8082
+      discovery: 
+        enabled: true
+        serviceId: config
       profile: dev
