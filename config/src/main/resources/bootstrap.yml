@@ -12,8 +12,6 @@ spring:
           basedir: gitconfig
           default-label: master
           ignoreLocalSshSettings: true
-#          hostKey: ssh
-#          hostKeyAlgorithm: ssh-rsa
           privateKey: |
                         -----BEGIN RSA PRIVATE KEY-----
                         MIIEowIBAAKCAQEA7U1QUCvpwtdWN4mgKuvmsR3VwgsvPYco/zt/v32b767P2Nnu
@@ -66,4 +64,4 @@ management:
 
 logging:
   level:
-    org.springframework.cloud: 'DEBUG'
+    org.springframework.cloud: DEBUG
