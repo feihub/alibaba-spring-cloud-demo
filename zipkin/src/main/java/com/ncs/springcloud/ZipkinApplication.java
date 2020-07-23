@@ -8,8 +8,8 @@ import zipkin2.server.internal.EnableZipkinServer;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableZipkinServer
-public class LogApplication {
+public class ZipkinApplication {
     public static void main(String[] args) {
-        SpringApplication.run(LogApplication.class, args);
+        SpringApplication.run(ZipkinApplication.class, args);
     }
 }
