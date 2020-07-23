@@ -5,12 +5,6 @@ spring:
   application:
     name: eureka
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: hystrix.stream
-
 eureka:
       client:
         registerWithEureka: false
