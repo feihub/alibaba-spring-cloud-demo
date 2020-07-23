@@ -14,6 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Business2Application {
 
+    RateLimiter rateLimiter = RateLimiter.create(5);
+    
+    @Bean
+    public HostAddrKeyResolver hostAddrKeyResolver() {
+        return new HostAddrKeyResolver();
+    }
+    
     public static void main(String[] args) {
         SpringApplication.run(Business2Application.class, args);
     }
@@ -31,4 +38,14 @@ public class Business2Application {
         return "business2Fallback";
     }
 
+    @RequestMapping("/test/rateLimiter")
+    @HystrixCommand(fallbackMethod="business2Fallback")
+    public String testRateLimiter() {
+        if(rateLimiter.tryAcquire()){
+            return "testRateLimiterOk";
+        }else{
+            throw new RuntimeException("test");
+        }
+    }
+    
 }
