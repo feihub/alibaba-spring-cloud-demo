@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableEurekaClient
 @EnableCircuitBreaker
 @RestController
+@EnableOAuth2Sso
 public class GatewayApplication {
     public static void main(String[] args) {
         SpringApplication.run(GatewayApplication.class, args);
