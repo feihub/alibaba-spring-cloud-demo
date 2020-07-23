@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: oauth2
+
+  cloud:
+    config:
+      discovery: 
+        enabled: true
+        serviceId: config
+      profile: dev
