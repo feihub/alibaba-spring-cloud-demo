@@ -1,6 +1,6 @@
 spring:
   application:
-    name: log
+    name: zipkin
   cloud:
     config:
       discovery: 
