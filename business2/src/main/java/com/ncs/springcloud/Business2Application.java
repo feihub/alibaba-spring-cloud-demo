@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableEurekaClient
 @EnableCircuitBreaker
 @RestController
+@EnableOAuth2Sso
 public class Business2Application {
 
     RateLimiter rateLimiter = RateLimiter.create(5);
