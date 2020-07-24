@@ -14,14 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableCircuitBreaker
 @RestController
 @EnableOAuth2Sso
-public class GatewayApplication {
+public class ZuulApplication {
     public static void main(String[] args) {
-        SpringApplication.run(GatewayApplication.class, args);
-    }
-
-    @Bean
-    public HostAddrKeyResolver hostAddrKeyResolver() {
-        return new HostAddrKeyResolver();
+        SpringApplication.run(ZuulApplication.class, args);
     }
 
     @RequestMapping("/fallback")
