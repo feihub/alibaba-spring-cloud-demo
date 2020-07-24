@@ -51,8 +51,8 @@ public class BusinessApplication {
     public Object autoShow(){
         return gitAutoRefreshConfig;
     }
-    
-    @GetMapping("/hello")
+
+    @GetMapping("/user")
     public String hello() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         return authentication.getName() + Arrays.toString(authentication.getAuthorities().toArray());
