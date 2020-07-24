@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class UserController {
     @GetMapping("/info")
-    public Principal getCurrentUser(Authentication authentication) {
-        return authentication.getPrincipal();
+    public User getCurrentUser(Authentication authentication) {
+        return (User) authentication.getPrincipal();
     }
 }
