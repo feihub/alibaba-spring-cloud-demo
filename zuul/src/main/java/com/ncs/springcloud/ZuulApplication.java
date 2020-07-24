@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.context.annotation.Bean;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableEurekaClient
 @EnableCircuitBreaker
 @RestController
-@EnableOAuth2Sso
+@EnableZuulProxy
 public class ZuulApplication {
     public static void main(String[] args) {
         SpringApplication.run(ZuulApplication.class, args);
     }
 
-    @RequestMapping("/fallback")
-    public String fallback(){
-        return "error";
+    @RequestMapping("/")
+    public String home(){
+        return "ZuulApplicationOk";
     }
 }
