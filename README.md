@@ -1,7 +1,7 @@
 # Spring Cloud Demo
 ### spring-cloud:Greenwich.SR6
 ### spring-boot:2.1.9.RELEASE
-#### Spring Cloud Config/Spring Cloud Bus/Spring Cloud Gateway/Spring Cloud OpenFeign/Spring Cloud Security/Spring Cloud Netflix(Eureka/Ribbon/Hystrix)+Turbine/Spring Cloud Sleuth+Zipkin
+#### Spring Cloud Config/Spring Cloud Bus/Spring Cloud OpenFeign/Spring Cloud Security/Spring Cloud Netflix(Zuul/Eureka/Ribbon/Hystrix)+Turbine/Spring Cloud Sleuth+Zipkin
 
 ## 1.eureka:      8084
 #### http://localhost:8084
@@ -12,7 +12,7 @@
 
 ## 3.oauth2:      8016   
 
-## 4.gateway:     8086
+## 4.zuul:     8086
 #### http://localhost:8086
 #### http://localhost:8086/business/
 #### http://localhost:8086/business2/
