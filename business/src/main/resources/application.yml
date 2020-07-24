@@ -1,0 +1,11 @@
+security:
+  oauth2:
+      client:
+        clientId: admin
+        clientSecret: password
+        userAuthorizationUri: http://localhost:8016/oauth/authorize
+        accessTokenUri: http://localhost:8016/oauth/token
+        clientAuthenticationScheme: form
+      resource:
+        userInfoUri: http://localhost:8016/user/info
+        preferTokenInfo: false
