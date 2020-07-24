@@ -35,7 +35,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .secret(passwordEncoder.encode("password"))
                 .accessTokenValiditySeconds(3600)
                 .refreshTokenValiditySeconds(864000)
-                .redirectUris("http://www.baidu.com")
+                .redirectUris("http://localhost:8088/login")
                 .scopes("all")
                 .authorizedGrantTypes("authorization_code","password");
     }
