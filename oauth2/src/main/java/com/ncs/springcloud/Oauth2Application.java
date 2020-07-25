@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableEurekaClient
+@EnableCircuitBreaker
 @RestController
 public class Oauth2Application {
     public static void main(String[] args) {
