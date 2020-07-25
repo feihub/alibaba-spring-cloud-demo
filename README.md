@@ -7,7 +7,7 @@
 #### http://localhost:8084
 
 ## 2.config:      8082
-#### http://localhost:8082/gateway-dev.yml
+#### http://localhost:8082/business-dev.yml
 #### POST:http://localhost:8082/actuator/bus-refresh
 
 ## 3.oauth2:      8016   
