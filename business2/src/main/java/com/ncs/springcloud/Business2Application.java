@@ -30,6 +30,12 @@ public class Business2Application {
         return "business2";
     }
 
+    @RequestMapping("/openfeign/test")
+    @HystrixCommand(fallbackMethod="business2Fallback")
+    public String openfeignTest() {
+        return "business2OpenFeignTest";
+    }
+
     public String business2Fallback() {
         return "business2Fallback";
     }
