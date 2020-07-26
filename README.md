@@ -11,6 +11,7 @@
 #### POST:http://localhost:8082/actuator/bus-refresh
 
 ## 3.oauth2:      8016   
+#### http://localhost:8016
 
 ## 4.zuul:     8086
 #### http://localhost:8086
