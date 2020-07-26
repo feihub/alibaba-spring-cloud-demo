@@ -4,6 +4,7 @@ import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
 
 @Configuration
 @EnableOAuth2Sso
@@ -14,6 +15,9 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
             .antMatchers("/login", "/oauth/**", "/logout","/error","/actuator/**")
             .permitAll()
-            .anyRequest().authenticated();
+            .anyRequest().authenticated()
+                .and()
+                .formLogin()
+                .permitAll().successHandler(new SavedRequestAwareAuthenticationSuccessHandler());
     }
 }
