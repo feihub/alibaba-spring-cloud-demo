@@ -28,6 +28,7 @@
 
 ## 6.business2:   8014
 #### http://localhost:8014
+#### http://localhost:8014/openfeign/test
 #### http://localhost:8014/test/rateLimiter
 #### GET:http://localhost:8014/actuator/refresh
 
