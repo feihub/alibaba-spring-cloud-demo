@@ -14,3 +14,7 @@ hystrix.command.default.execution.isolation.strategy: SEMAPHORE
 
 hystrix:
   shareSecurityContext: true
+
+spring:
+  session:
+    store-type: redis

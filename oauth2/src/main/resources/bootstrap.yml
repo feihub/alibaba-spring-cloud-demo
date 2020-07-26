@@ -13,3 +13,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8084/eureka/
+
+  session:
+    store-type: redis

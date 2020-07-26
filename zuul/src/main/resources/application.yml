@@ -9,3 +9,7 @@ security:
     resource:
       userInfoUri: http://localhost:8016/user/info
       preferTokenInfo: false
+
+spring:
+  session:
+    store-type: redis
