@@ -32,7 +32,7 @@
 - #### http://localhost:8014
 - #### http://localhost:8014/openfeign/test
 - #### http://localhost:8014/test/rateLimiter
-- #### GET:http://localhost:8014/actuator/refresh
+- #### POST:http://localhost:8014/actuator/refresh
 
 ## 7. turbine:     8010
 - #### http://localhost:8010/hystrix
