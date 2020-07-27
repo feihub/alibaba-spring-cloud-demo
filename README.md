@@ -16,9 +16,9 @@
 ## 4. zuul:     8086
 - #### http://localhost:8086
 - #### http://localhost:8086/business/
-- #### http://localhost:8086/business2/
 - #### http://localhost:8086/business/autoShow
 - #### http://localhost:8086/business/openfeign/test
+- #### http://localhost:8086/business2/
 - #### http://localhost:8086/business2/test/rateLimiter
 - #### POST:http://localhost:8086/actuator/refresh
 
