@@ -3,8 +3,8 @@
 - ### spring-boot:2.1.9.RELEASE
 - #### Spring Cloud Config/Spring Cloud Bus/Spring Cloud OpenFeign/Spring Cloud Security+ Oauth2 + Spring Session/Spring Cloud Netflix(Zuul/Eureka/Ribbon/Hystrix) + Turbine/Spring Cloud Sleuth + Zipkin/Redis/Rabbitmq
 
-## 1.eureka:      8084
-#### http://localhost:8084
+## 1. eureka:      8084
+- #### http://localhost:8084
 
 ## 2.config:      8082
 #### http://localhost:8082/business-dev.yml
