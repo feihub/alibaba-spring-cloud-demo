@@ -9,6 +9,8 @@ https://www.learnnowlab.com/Spring-Cloud-Gateway-with-Spring-Security/
 
 https://spring.io/blog/2019/08/16/securing-services-with-spring-cloud-gateway
 
+https://github.com/steventong/simple-microservices
+
 ## 1. eureka:      8084
 - #### http://localhost:8084
 
