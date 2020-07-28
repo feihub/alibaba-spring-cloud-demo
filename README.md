@@ -3,6 +3,8 @@
 - ### spring-boot:2.2.3.RELEASE
 - #### Spring Cloud Alibaba(Nacos+Sentinel)/Spring Cloud Gateway/Spring Cloud Bus/Spring Cloud OpenFeign/Spring Cloud Security+ Oauth2 + SSO + Spring Session/Spring Cloud Netflix(Ribbon)/Spring Cloud Sleuth + Zipkin/Redis/RocketMQ
 
+https://github.com/gf-huanchupk/SpringBootLearning/tree/master/springboot-security-oauth2-jwt
+
 Spring Cloud Gateway 与 OAuth2 不兼容issue
 https://github.com/artemMartynenko/spring-cloud-gateway-oauth2-sso-sample-application
 https://www.learnnowlab.com/Spring-Cloud-Gateway-with-Spring-Security/
