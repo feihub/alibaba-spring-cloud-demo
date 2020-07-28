@@ -7,6 +7,8 @@ Spring Cloud Gateway 与 OAuth2 不兼容issue
 https://github.com/artemMartynenko/spring-cloud-gateway-oauth2-sso-sample-application
 https://www.learnnowlab.com/Spring-Cloud-Gateway-with-Spring-Security/
 
+https://spring.io/blog/2019/08/16/securing-services-with-spring-cloud-gateway
+
 ## 1. eureka:      8084
 - #### http://localhost:8084
 
