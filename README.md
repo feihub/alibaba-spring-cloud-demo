@@ -13,6 +13,8 @@ https://spring.io/blog/2019/08/16/securing-services-with-spring-cloud-gateway
 
 https://github.com/steventong/simple-microservices
 
+https://www.cnblogs.com/Irving/p/9430460.html
+
 ## 1. eureka:      8084
 - #### http://localhost:8084
 
