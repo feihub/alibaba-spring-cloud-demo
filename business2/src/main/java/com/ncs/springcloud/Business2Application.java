@@ -1,10 +1,10 @@
 package com.ncs.springcloud;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.google.common.util.concurrent.RateLimiter;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,7 +22,7 @@ public class Business2Application {
     }
 
     @RequestMapping("/")
-    @SentinelResource(fallbackMethod="business2Fallback")
+    @SentinelResource(fallback="business2Fallback")
     public String home() {
 
         int i = 1/0;
@@ -31,7 +31,7 @@ public class Business2Application {
     }
 
     @RequestMapping("/openfeign/test")
-    @SentinelResource(fallbackMethod="business2Fallback")
+    @SentinelResource(fallback="business2Fallback")
     public String openfeignTest() {
         return "business2OpenFeignTest";
     }
@@ -41,7 +41,7 @@ public class Business2Application {
     }
 
     @RequestMapping("/test/rateLimiter")
-    @SentinelResource(fallbackMethod="business2Fallback")
+    @SentinelResource(fallback="business2Fallback")
     public String testRateLimiter() {
         if(rateLimiter.tryAcquire()){
             return "testRateLimiterOk";

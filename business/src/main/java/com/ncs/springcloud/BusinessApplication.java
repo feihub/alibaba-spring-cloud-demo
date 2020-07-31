@@ -1,10 +1,10 @@
 package com.ncs.springcloud;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.security.core.Authentication;
@@ -35,7 +35,7 @@ public class BusinessApplication {
     }
 
     @RequestMapping("/")
-    @SentinelResource(fallbackMethod="businessFallback")
+    @SentinelResource(fallback="businessFallback")
     public String home() {
 
         int i = 1/0;

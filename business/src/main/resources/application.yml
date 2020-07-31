@@ -10,11 +10,6 @@ security:
         userInfoUri: http://localhost:8016/user/info
         preferTokenInfo: false
 
-hystrix.command.default.execution.isolation.strategy: SEMAPHORE
-
-hystrix:
-  shareSecurityContext: true
-
 spring:
   session:
     store-type: redis

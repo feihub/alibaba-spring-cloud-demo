@@ -1,9 +1,14 @@
 package com.ncs.springcloud;
 
+import com.alibaba.csp.sentinel.adapter.reactor.SentinelReactorTransformer;
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Mono;
 
 @SpringBootApplication
 @EnableDiscoveryClient
