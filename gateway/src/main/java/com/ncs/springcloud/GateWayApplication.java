@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-public class ZuulApplication {
+public class GateWayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ZuulApplication.class, args);
+        SpringApplication.run(GateWayApplication.class, args);
     }
 
     @RequestMapping("/")
     public String home(){
-        return "ZuulApplicationOk";
+        return "GateWayApplicationOk";
     }
 }
