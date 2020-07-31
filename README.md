@@ -1,7 +1,7 @@
 # Spring Cloud Demo2
 - ### spring-cloud:Hoxton.SR6
 - ### spring-boot:2.2.3.RELEASE
-- #### Spring Cloud Alibaba(Nacos+Sentinel)/Spring Cloud Gateway/Spring Cloud Bus/Spring Cloud OpenFeign/Spring Cloud Security+ Oauth2 + SSO + Spring Session/Spring Cloud Netflix(Ribbon)
+- #### Spring Cloud Alibaba(Nacos+Sentinel)/Spring Cloud Gateway/Spring Cloud OpenFeign/Spring Cloud Security+ Oauth2 + SSO + Spring Session/Spring Cloud Netflix(Ribbon)
 
 ## 3. oauth2:      8016   
 - #### http://localhost:8016
