@@ -18,7 +18,6 @@ import java.util.Arrays;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableCircuitBreaker
 @RestController
 @EnableFeignClients
 @RefreshScope
@@ -36,7 +35,7 @@ public class BusinessApplication {
     }
 
     @RequestMapping("/")
-    @HystrixCommand(fallbackMethod="businessFallback")
+    @SentinelResource(fallbackMethod="businessFallback")
     public String home() {
 
         int i = 1/0;
