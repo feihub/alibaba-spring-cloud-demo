@@ -16,18 +16,15 @@ problem: can not use @EnableOauth2Sso
 - #### http://localhost:8086/business/openfeign/test
 - #### http://localhost:8086/business2/
 - #### http://localhost:8086/business2/test/rateLimiter
-- #### POST:http://localhost:8086/actuator/refresh
 
 ## 5. business:    8088
 - #### http://localhost:8088
 - #### http://localhost:8088/openfeign/test
 - #### http://localhost:8088/autoShow
-- #### POST:http://localhost:8088/actuator/refresh
 
 ## 6. business2:   8014
 - #### http://localhost:8014
 - #### http://localhost:8014/openfeign/test
 - #### http://localhost:8014/test/rateLimiter
-- #### POST:http://localhost:8014/actuator/refresh
 
 
