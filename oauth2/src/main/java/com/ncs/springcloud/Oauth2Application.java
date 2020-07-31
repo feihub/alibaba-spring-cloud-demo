@@ -9,7 +9,6 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableCircuitBreaker
 @RestController
 @EnableRedisHttpSession
 public class Oauth2Application {
@@ -17,6 +16,7 @@ public class Oauth2Application {
         SpringApplication.run(Oauth2Application.class, args);
     }
     @GetMapping("/")
+    @SentinelResource("home)
     public String home() {
         return "Oauth2ApplicationOk";
     }
