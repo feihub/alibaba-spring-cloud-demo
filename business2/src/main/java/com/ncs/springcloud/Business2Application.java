@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableCircuitBreaker
 @RestController
 @EnableRedisHttpSession
 public class Business2Application {
@@ -23,7 +22,7 @@ public class Business2Application {
     }
 
     @RequestMapping("/")
-    @HystrixCommand(fallbackMethod="business2Fallback")
+    @SentinelResource(fallbackMethod="business2Fallback")
     public String home() {
 
         int i = 1/0;
@@ -32,7 +31,7 @@ public class Business2Application {
     }
 
     @RequestMapping("/openfeign/test")
-    @HystrixCommand(fallbackMethod="business2Fallback")
+    @SentinelResource(fallbackMethod="business2Fallback")
     public String openfeignTest() {
         return "business2OpenFeignTest";
     }
@@ -42,7 +41,7 @@ public class Business2Application {
     }
 
     @RequestMapping("/test/rateLimiter")
-    @HystrixCommand(fallbackMethod="business2Fallback")
+    @SentinelResource(fallbackMethod="business2Fallback")
     public String testRateLimiter() {
         if(rateLimiter.tryAcquire()){
             return "testRateLimiterOk";
