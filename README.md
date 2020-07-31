@@ -14,7 +14,7 @@
 ## 3. oauth2:      8016   
 - #### http://localhost:8016
 
-## 4. zuul:     8086
+## 4. gateway:     8086
 
 problem: can not use @EnableOauth2Sso
 
