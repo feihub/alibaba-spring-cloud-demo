@@ -17,4 +17,11 @@ public class GateWayApplication {
     public String home(){
         return "GateWayApplicationOk";
     }
+    
+    @GetMapping("/mono")
+    @SentinelResource("hello")
+    public Mono<String> mono() {
+	return Mono.just("simple string")
+			.transform(new SentinelReactorTransformer<>("otherResourceName"));
+    }
 }
