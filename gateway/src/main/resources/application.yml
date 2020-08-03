@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    gateway:
+      default-filters:
+      routes:
+        - id: business
+          uri: lb://business
+          predicates:
+            - Path=/business/**
+          filters:
+            - StripPrefix=1
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@hostAddrKeyResolver}'
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 3
+        - id: business2
+          uri: lb://business2
+          predicates:
+            - Path=/business2/**
+          filters:
+            - StripPrefix=1
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@hostAddrKeyResolver}'
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 3
