@@ -14,6 +14,12 @@ import reactor.core.publisher.Mono;
 @EnableDiscoveryClient
 @RestController
 public class GateWayApplication {
+
+    @Bean
+    public HostAddrKeyResolver hostAddrKeyResolver() {
+        return new HostAddrKeyResolver();
+    }
+	
     public static void main(String[] args) {
         SpringApplication.run(GateWayApplication.class, args);
     }
