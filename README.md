@@ -8,11 +8,10 @@
 
 ## 4. gateway:     8086
 
-problem: can not use @EnableOauth2Sso
+- #### problem: can not use @EnableOauth2Sso
 
 - #### http://localhost:8086
 - #### http://localhost:8086/business/
-- #### http://localhost:8086/business/autoShow
 - #### http://localhost:8086/business/openfeign/test
 - #### http://localhost:8086/business2/
 - #### http://localhost:8086/business2/test/rateLimiter
@@ -20,11 +19,8 @@ problem: can not use @EnableOauth2Sso
 ## 5. business:    8088
 - #### http://localhost:8088
 - #### http://localhost:8088/openfeign/test
-- #### http://localhost:8088/autoShow
 
 ## 6. business2:   8014
 - #### http://localhost:8014
 - #### http://localhost:8014/openfeign/test
 - #### http://localhost:8014/test/rateLimiter
-
-
