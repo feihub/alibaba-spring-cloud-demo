@@ -25,3 +25,7 @@ spring:
                 key-resolver: '#{@hostAddrKeyResolver}'
                 redis-rate-limiter.replenishRate: 1
                 redis-rate-limiter.burstCapacity: 3
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
