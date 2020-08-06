@@ -1,4 +1,4 @@
-# Spring Cloud Demo2
+# Alibaba Spring Cloud Demo
 - ### spring-cloud:Hoxton.SR6
 - ### spring-boot:2.2.3.RELEASE
 - #### Spring Cloud Alibaba(Nacos+Sentinel)/Spring Cloud Gateway/Spring Cloud OpenFeign/Spring Cloud Security+ Oauth2 + SSO + Spring Session/Spring Cloud Netflix(Ribbon)
